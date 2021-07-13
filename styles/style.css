@@ -1,0 +1,88 @@
+/* Font */
+
+/* Common styles and Utilities */
+
+body{
+    width: 1440px;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+}
+main{
+    background-color: rgb(245, 247, 250);
+    padding-left: 180px;
+    padding-right: 210px;
+    padding-top: 70px;
+    padding-bottom: 165px; 
+   
+    
+}
+/* Header Styles */
+header{
+    display: flex;
+    background-color: blue;
+    
+    
+}
+.headline .header-title{
+color: #FFFFFF;
+ font-weight:700;
+ font-size: 64px;
+ margin-left: 156px;
+ margin-right: 102px;
+ margin-top: 207px;
+ margin-bottom: 27px;
+}
+.headline .watch-me-button{
+    Width:168px;
+    Height: 44px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-size: 16px;
+    margin-left: 156px;
+    margin-bottom: 169px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.banner-photo{
+    width: 556px;
+    height: 438px;
+    padding-top: 153px;
+    padding-right: 141px;
+    padding-bottom: 86px;
+}
+/* Styles for players */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px; 
+}
+.player{
+    height: 424px;
+    width: 300px;
+    border: 2px solid #ffffff ;
+    box-shadow: 20px 20px 20px 20px #dbd9d9;
+    padding: 15px;
+   
+}
+.player-photo img{
+    width: 300px;
+    height: 256px;
+    justify-content: center;
+
+}
+.player-info .player-name{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: #18191F;
+}
+.player-info .player-details{
+    color: #6C6C6C;
+    justify-content: center;
+}
