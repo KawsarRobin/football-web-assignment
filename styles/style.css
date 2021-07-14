@@ -277,6 +277,10 @@ Media Queary Styles
         grid-row-gap: 10px;
         justify-content: center;
     }
+    .footer-logo img{
+        width: 270px;
+        height: 63px;
+    }
 
     
 }
