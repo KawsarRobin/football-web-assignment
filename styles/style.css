@@ -280,6 +280,8 @@ Media Queary Styles
     .footer-logo img{
         width: 270px;
         height: 63px;
+        padding-left: 18px;
+        padding-right: 71px;
     }
 
     
