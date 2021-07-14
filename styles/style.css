@@ -1,4 +1,5 @@
 /* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Common styles and Utilities */
 
@@ -9,20 +10,23 @@ body{
     padding: 0;
 }
 main{
-    background-color: rgb(245, 247, 250);
     padding-left: 180px;
     padding-right: 210px;
     padding-top: 70px;
-    padding-bottom: 165px; 
-   
-    
+    padding-bottom: 165px;   
 }
-/* Header Styles */
+/*---------------------
+     Header Styles
+-----------------------*/
 header{
     display: flex;
-    background-color: blue;
-    
-    
+    background-color: blue;   
+}
+.headline{
+width: 50%;
+}
+.banner-photo{
+    width: 50%;
 }
 .headline .header-title{
 color: #FFFFFF;
@@ -47,7 +51,8 @@ color: #FFFFFF;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.banner-photo{
+
+.banner-photo img{
     width: 556px;
     height: 438px;
     padding-top: 153px;
@@ -62,18 +67,15 @@ color: #FFFFFF;
     grid-row-gap: 27px; 
 }
 .player{
-    height: 424px;
+    height: 474px;
     width: 300px;
     border: 2px solid #ffffff ;
-    box-shadow: 20px 20px 20px 20px #dbd9d9;
-    padding: 15px;
-   
+    box-shadow: 30px 30px 30px#dbd9d9;
+    padding: 15px;   
 }
 .player-photo img{
     width: 300px;
     height: 256px;
-    justify-content: center;
-
 }
 .player-info .player-name{
     font-size: 28px;
@@ -84,5 +86,37 @@ color: #FFFFFF;
 }
 .player-info .player-details{
     color: #6C6C6C;
-    justify-content: center;
+    text-align: justify;
+}
+
+/*----------------
+Footer Styles
+----------------*/
+
+.footer-container{
+    margin-top: 158px;
+    margin-bottom: 63px;
+    text-align: center;
+    
+}
+.footer-logo img{
+    Width: 484px;
+    height: 110px;
+}
+.social-media-icon{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fa-instagram, .fa-futbol, .fa-twitter, .fa-youtube{
+    width: 17px;
+    height: 17px;
+    color: #969BAB;
+    background-color: #969bab8e ;
+    border-radius:50%;
+    border: 1px solid white;
+    padding: 15px;   
+}
+.copy-right{
+    font-size: 18px;
 }
