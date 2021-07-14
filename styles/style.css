@@ -1,6 +1,6 @@
-/*-------------
+/*-----------------------
       Font 
---------------*/
+-----------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /*------------------------------
@@ -19,9 +19,9 @@ main{
     padding-top: 70px;
 
 }
-/*---------------------
+/*------------------------------
      Header Styles
------------------------*/
+------------------------------*/
 header:hover > .banner-headline{
     transform: rotate(360deg);
     transition: transform 2s ease-in-out;
@@ -219,3 +219,64 @@ color: #FFFFFF;
     font-size: 18px;
 }
 
+/*---------------------- 
+Media Queary Styles
+------------------------- */
+
+/*-----------------
+ Mobile Device 
+ --------------------*/
+@media (max-width:480px)  {
+    
+    body{
+        width:100%;
+    }
+    .top-banner{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-headline .banner-title{
+         margin-left: 16px;
+         margin-right: 66px;
+         margin-top: 112px;
+         margin-bottom: 30px;    
+        }
+        .banner-headline .watch-me-button{
+            margin-left: 19px;
+            margin-bottom: 50px;
+        } 
+        .banner-photo img{
+                width: 329px;
+                height: 259px;
+                padding-left: 15px;
+                padding-right: 16px;
+                padding-bottom: 62px;
+        }
+        .players{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap:24px; 
+            justify-content: center;
+        }
+        .player{
+            flex-direction: column;
+        }
+        .stories{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 24px; 
+            justify-content: center;
+    
+    }
+    footer{
+        width: 100%;
+    }
+    .match-container, .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+        justify-content: center;
+    }
+
+    
+}
