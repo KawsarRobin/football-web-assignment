@@ -13,22 +13,34 @@ main{
     padding-left: 180px;
     padding-right: 210px;
     padding-top: 70px;
-    padding-bottom: 165px;   
+
 }
 /*---------------------
      Header Styles
 -----------------------*/
-header{
+header:hover > .banner-headline{
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+header:hover > .banner-photo{
+    transform: scale(1.3);
+    transition: transform 2s ease-in;
+}
+
+.players-container{
+    padding-bottom: 165px;   
+}
+.top-banner{
     display: flex;
     background-color: blue;   
 }
-.headline{
+.banner-headline{
 width: 50%;
 }
 .banner-photo{
     width: 50%;
 }
-.headline .header-title{
+.banner-headline .banner-title{
 color: #FFFFFF;
  font-weight:700;
  font-size: 64px;
@@ -37,7 +49,7 @@ color: #FFFFFF;
  margin-top: 207px;
  margin-bottom: 27px;
 }
-.headline .watch-me-button{
+.banner-headline .watch-me-button{
     Width:168px;
     Height: 44px;
     text-decoration: none;
@@ -59,7 +71,9 @@ color: #FFFFFF;
     padding-right: 141px;
     padding-bottom: 86px;
 }
-/* Styles for players */
+/*----------------
+ Styles for players
+ ------------------ */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -67,8 +81,8 @@ color: #FFFFFF;
     grid-row-gap: 27px; 
 }
 .player{
-    height: 474px;
     width: 300px;
+    height: 474px;
     border: 2px solid #ffffff ;
     box-shadow: 30px 30px 30px#dbd9d9;
     padding: 15px;   
@@ -120,3 +134,41 @@ Footer Styles
 .copy-right{
     font-size: 18px;
 }
+/*---------------
+ Web-Stories Style 
+ --------------- */
+ .web-stories .story-head{
+    Width:240px;
+     font-size: 30px;
+     font-weight: 600;
+     color: white;
+     background-color: rgb(76, 206, 134);
+     border: 1px solid white;
+     border-radius: 10px;
+     padding-left: 10px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+ }
+ .stories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px; 
+ }
+ .story{
+    width: 300px;
+    height: 550px;
+    border: 2px solid #e2dddd ;
+    border-radius: 20px;
+    box-shadow: 30px 30px 30px#acaaaa;
+    padding: 15px; 
+    text-align: center;
+ }
+ .story-details .story-title{
+     font-size: 28px;
+     font-weight: 700;
+ }
+ .story-details p{
+    font-size: 20px; 
+    font-weight: 500;
+ }
